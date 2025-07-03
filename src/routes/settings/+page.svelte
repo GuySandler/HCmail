@@ -5,8 +5,6 @@
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
 
-	import Header from '$lib/components/header.svelte';
-
 	let persistentData = $state({
 		apiKey: '',
 		isSetup: false
@@ -32,7 +30,6 @@
 	});
 </script>
 <div id="body">
-	<Header />
 	<div id="content" style="display: flex; flex-direction: column; align-items: center;">
 		<div id="settingscontainer">
 			<div class="setting">
